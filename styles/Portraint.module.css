@@ -1,6 +1,4 @@
 .container {
-    position: relative;
-    top: 7rem;
     max-width: 100% !important;
     min-width: 100% !important;
 }
@@ -10,8 +8,6 @@
     min-height: 500px;
     max-height: 800px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     overflow: hidden;
 }
 
@@ -21,6 +17,11 @@
     height: 100%;
 }
 
-.titleApp {
-    z-index: 10;
+
+@media (max-width: 768px) {
+    .container {
+        border: 2px solid purple;
+        max-height: 100px !important;
+        min-height: 185px !important;
+    }
 }
