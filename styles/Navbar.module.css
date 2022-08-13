@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Bettina-Signature';
+    src: url('font/Bettina-Signature-Regular.ttf');
+    src: url('font/Bettina-Signature-Regular.otf');
+    font-style: normal;
+    font-weight: 400;
+}
+
 .navbar {
     width: 100%;
     display: flex;
@@ -5,7 +13,6 @@
     justify-content: space-between;
     padding: 20px;
     background-color: rgb(247,247,247);
-    color: #fff;
     z-index: 20;
 }
 
@@ -20,14 +27,19 @@
     font-size: 20px;
 }
 
+.menu li > a {
+    color: #FEDC63;
+    font-weight: 700;
+    font-family: 'Bettina-Signature', sans-serif;
+}
+
 .menu li:hover {
-    background-color: #4c9e9e;
+    background-color: #F9DF8C;
     border-radius: 5px;
     transition: 0.3s ease;
 }
-
-.nav-links > a {
-    color: #ffffff;
+.menu li a:hover {
+    color: #FFFFFF;
 }
 
 .menu li {

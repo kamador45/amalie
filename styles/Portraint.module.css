@@ -20,7 +20,6 @@
 
 @media (max-width: 768px) {
     .container {
-        border: 2px solid purple;
         max-height: 100px !important;
         min-height: 185px !important;
     }
