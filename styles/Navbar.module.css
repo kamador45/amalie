@@ -1,0 +1,74 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(247,247,247);
+    color: #fff;
+    position: fixed;
+    z-index: 20;
+}
+
+.logo {
+    min-width: 15%;
+    max-width: 20%;
+}
+
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 20px;
+}
+
+.menu li:hover {
+    background-color: #4c9e9e;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.nav-links > a {
+    color: #ffffff;
+}
+
+.menu li {
+    padding: 5px 14px;
+}
+
+.checkbox {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 25px;
+    user-select: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: rebeccapurple;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+    .menu li:hover {
+        display: inline-block;
+        background-color: #c9e9e1;
+        transition: 0.3s ease;
+    }
+    .menu li + li {
+        margin-top: 12px;
+    }
+    .checkbox:checked ~.menu {
+        display: block;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+}
