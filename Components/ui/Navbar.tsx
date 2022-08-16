@@ -42,5 +42,4 @@ export const NavbarComponent: FC = () => {
             </ul>
         </nav>
     )
-
 }
