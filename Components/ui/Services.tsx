@@ -36,7 +36,7 @@ export const Services: FC = () => {
                 {
                     services.map(x => (
                         <div key={x.id} className={styles['services-one']}>
-                            <Image className={styles['image-services']} showSkeleton={true} maxDelay={10000}  src={x.img.src} alt={x.name}/>
+                            <Image width={190} showSkeleton={true} maxDelay={10000}  src={x.img.src} alt={x.name}/>
                             <div className={styles['services-one-title']}>
                                 <h3>{x.name}</h3>
                             </div>

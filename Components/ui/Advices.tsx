@@ -43,7 +43,7 @@ export const Advices: FC = () => {
                 {
                     Steps.map(x => (
                         <div key={x.id} className={styles['helpful']}>
-                            <Image  src={x.img.src} showSkeleton={true} maxDelay={10000} />
+                            <Image width={250}  src={x.img.src} showSkeleton={true} maxDelay={10000} />
                             <div className={styles['helpful-subTitle']}>
                                 <ol>
                                     <li>
