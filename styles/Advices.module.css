@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'Bettina-Signature';
+    src: url('font/Bettina-Signature-Regular.ttf');
+    src: url('font/Bettina-Signature-Regular.otf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Bebas-neue';
+    src: url('font/BebasNeue-Regular.ttf');
+    src: url('font/BebasNeue-Regular.otf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+.container-helpful {
+    background: #FFF;
+}
+
+.steps-follow {
+    width: 320px;
+    margin: 0 auto;
+}
+
+.steps-follow > h2 {
+    font-family: 'Bettina-Signature', sans-serif;
+    text-align: center;
+    color: #111111;
+}
+
+.helpful-list {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    margin:  10px;
+}
+
+.helpful {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.helpful-subTitle {
+    margin:  0 auto;
+}
+.helpful-subTitle > ol > li > p {
+    font-family: 'Bettina-Signature', sans-serif;
+    text-align: center;
+    font-size: 15px;
+}

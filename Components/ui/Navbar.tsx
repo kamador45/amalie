@@ -5,6 +5,31 @@ import styles from "../../styles/Navbar.module.css";
 import logo from "../../public/Amalie.png";
 
 export const NavbarComponent: FC = () => {
+
+    //define list menu
+    const menuItems = [
+        {
+            'id':1,
+            'text':'Inicio',
+            'href':'/'
+        },
+        {
+            'id':2,
+            'text':'Nosotros',
+            'href':'/nosotros'
+        },
+        {
+            'id':3,
+            'text':'Servicios',
+            'href':'/servicios'
+        },
+        {
+            'id':4,
+            'text':'Contacto',
+            'href':'/contacto'
+        },
+    ];
+
     return(
         <nav className={styles.navbar}>
             <div className={styles.logo}>
@@ -18,26 +43,15 @@ export const NavbarComponent: FC = () => {
                 <input className={styles.checkbox} type={'checkbox'} id={'checkbox_toggle'} />
                 <label form={'checkbox_toggle'} className={styles.hamburger}>&#9776;</label>
                 <div className={styles.menu}>
-                    <li>
-                        <Link href={'home/'}>
-                            <a>Home</a>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href={'about/'}>
-                            <a>About Us</a>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href={'services/'}>
-                            <a>Services</a>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href={'contact/'}>
-                            <a>Contact</a>
-                        </Link>
-                    </li>
+                    {
+                        menuItems.map(x => (
+                            <li key={x.id}>
+                                <Link href={x.href}>
+                                    <a>{x.text}</a>
+                                </Link>
+                            </li>
+                        ))
+                    }
                 </div>
             </ul>
         </nav>

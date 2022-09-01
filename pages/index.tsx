@@ -4,6 +4,7 @@ import React from "react";
 import {Portraint} from "../Components/ui/Portraint";
 import {About} from "../Components/ui/About";
 import {Services} from "../Components/ui/Services";
+import {Advices} from "../Components/ui/Advices";
 
 
 const Home: NextPage = () => {
@@ -12,6 +13,7 @@ const Home: NextPage = () => {
         <Portraint />
         <About />
         <Services />
+        <Advices />
     </Maylayout>
   )
 }

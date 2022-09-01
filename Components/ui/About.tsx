@@ -3,7 +3,7 @@ import styles from "../../styles/about.module.css";
 
 export const About: FC = () => {
     return(
-        <div className={styles.container}>
+        <section className={styles.container}>
             <div className={styles.aboutAmalie}>
                 <div className={styles['row-1']}>
                     <div className={styles.title}>
@@ -37,6 +37,6 @@ export const About: FC = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
