@@ -13,41 +13,45 @@
     font-weight: 400;
 }
 
-.container-services {
+.container-contact {
     background: #FEDC63;
 }
 
-.container-title-services {
+.container-title-contact {
     width: 350px;
     margin: 0 auto;
     padding: 50px 0 0 0;
 }
 
-.container-title-services h2 {
-    color: #FFFFFF;
+.container-title-contact  h2 {
+    color: #fff;
     text-align: center;
     font-family: 'Bettina-Signature', sans-serif;
 }
 
-.services-list {
+.container-split-screen {
     display: grid;
     grid-template-columns: auto auto;
     padding: 10px;
-    margin: 10px;
+    margin:  10px;
 }
 
-.services-one {
-    width: 50%;
-    margin: 0 auto;
-}
-.services-one .services-one-title {
-    width: auto;
-    margin: 20px;
+.container-split-1 {
+    width: 100%;
+    margin:  0 auto;
 }
 
-.services-one-title > h3 {
-    font-size: 40px;
-    text-align: center;
-    color: #FFFFFF;
-    font-family: 'Bettina-Signature', sans-serif;
+.container-split-2 {
+    width: 100%;
+    margin:  0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-button {
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto; 
 }

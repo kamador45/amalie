@@ -2,28 +2,21 @@ import {FC} from "react";
 import {Image} from "@nextui-org/react";
 import styles from "../../styles/Services.module.css";
 //Load assets
-import common from "../../public/common.png";
-import quick from "../../public/quick.png";
-import premium from "../../public/premium.png";
-
+import maritimo from '../../public/ship.png';
+import air from '../../public/airplane.png';
 
 export const Services: FC = () => {
     //Load services
     const services = [
         {
             id:1,
-            'name':'Normal',
-            'img':common
+            'name':'MARÍTIMO',
+            'img':maritimo
         },
         {
             id:2,
-            'name':'Quick',
-            'img':quick
-        },
-        {
-            id:2,
-            'name':'Premium',
-            'img':premium
+            'name':'AEREO',
+            'img':air
         },
     ];
 
